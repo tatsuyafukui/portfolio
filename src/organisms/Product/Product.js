@@ -5,20 +5,22 @@ import Zoom from "../../molecules/Zoom/Zoom";
 const Product = (props) => {
 		return (
 				<div className={classes.Product}>
-						<a href={props.url}>
+						<a href={props.url} className={classes.parent}>
 								<div className={classes.ProductImage} style={{backgroundImage: `url(${props.image})`}}>
 										<Zoom
 												id={props.id}
 												title={props.title}
 												content={props.content}
+												language={props.language}
 										>
 										</Zoom>
 								</div>
-								<div className={classes.Device}>
-										<h2>{props.title}</h2>
-										<p>{props.content}</p>
-								</div>
 						</a>
+						<div className={classes.Device}>
+								<h2>{props.title}</h2>
+								<p>{props.content}</p>
+								<p>{props.language}</p>
+						</div>
 				</div>
 		);
 };

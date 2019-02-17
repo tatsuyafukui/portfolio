@@ -7,12 +7,12 @@ class Challenge extends Component {
 
 		state = {
 				challenge: [
-						{id: '1', name: 'Alexa Skill', content: '現状チュートリアルレベル'},
-						{id: '2', name: 'Illustlator', content: 'イラスト・アイコンなど'},
-						{id: '3', name: 'react&redux', content: 'フロントをもっと高めたい！'},
-						{id: '4', name: 'TypeScript', content: 'react安定したら'},
-						{id: '5', name: 'react native', content: '少しだけ触ってます'},
-						{id: '6', name: 'Piano', content: '少しだけ触ってます'}
+						{id: '1', name: 'Alexa Skill'},
+						{id: '2', name: 'Illustrator'},
+						{id: '3', name: 'react&redux'},
+						{id: '4', name: 'TypeScript'},
+						{id: '5', name: 'react native'},
+						{id: '6', name: 'Piano'}
 				]
 		};
 
@@ -23,7 +23,6 @@ class Challenge extends Component {
 						return (
 								<li key={item.id}>
 										<h3>{item.name}</h3>
-										<p>{item.content}</p>
 								</li>
 						);
 				});
@@ -31,7 +30,7 @@ class Challenge extends Component {
 
 				return (
 						<div className={classes.Challenge}>
-								<SectionTitle title={'Interested'} />
+								<h2 id={'Interested'}>Interested</h2>
 								<ul className={classes.Flex}>
 										{list}
 								</ul>

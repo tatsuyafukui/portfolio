@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classes from './SkillsContainer.css';
 import Skill from '../../../organisms/Skill/Skill';
-import SectionTitle from '../../../atoms/Title/SectionTitle';
 
 
 class SkillContainer extends Component {
@@ -54,7 +53,7 @@ class SkillContainer extends Component {
 
 				return (
 						<div className={classes.SkillsContainer}>
-								<h1 className={classes.SectionTitle}>Skills</h1>
+								<h1 className={classes.SectionTitle} id={'Skills'}>Skills</h1>
 								<div className={classes.Flex}>
 										<div className={classes.List}>
 												<h2>Front End</h2>

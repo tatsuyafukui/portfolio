@@ -3,8 +3,6 @@ import classes from './Zoom.css';
 
 class Zoom extends Component {
 
-
-
 		overHandler(index){
 				document.querySelectorAll(`.${classes.ProductText}`)[index].style.display = 'block';
 		}
@@ -26,6 +24,7 @@ class Zoom extends Component {
 										<div className={classes.ProductText}>
 												<h2>{this.props.title}</h2>
 												<p>{this.props.content}</p>
+												<p>{this.props.language}</p>
 										</div>
 						</div>
 				);

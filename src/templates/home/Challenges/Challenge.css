@@ -1,5 +1,8 @@
 
+.Challenge {
+    padding-bottom: 80px;
 
+}
 
 .Flex {
     display: flex;
@@ -11,4 +14,18 @@
 
 .Flex li {
     flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+
+.Flex li p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+    .Challenge {
+        padding-bottom: 20px;
+    }
 }

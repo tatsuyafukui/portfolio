@@ -30,14 +30,50 @@
 .HomeTitle {
     color: rgba(255,255,255, 0.8);
     margin: 0;
-    margin-top: 20px;
+    margin-top: 100px;
     text-align: center;
     font-size: 48px;
 }
 
 .Home img {
+    position: absolute;
+    top: 190px;
+    left: 45%;
     width: 120px;
+    margin: 0 auto;
     height: auto;
+    display: none;
+    border-radius: 35px;
+    transition: opacity 1s linear 0s;
+}
+
+/* キーフレームを作成 */
+@-webkit-keyframes fadein {
+    0%{
+        opacity:0;
+    }
+    75%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+        opacity :1;
+        height:200px;
+    }
+    95%{
+        height:200px;
+    }
+    100% {
+        opacity:0;
+    }
+}
+.Home img{
+    -webkit-animation: fadein 3s linear 0s 1;
 }
 
 .Home p {
@@ -48,4 +84,29 @@
 
 .Container {
     padding: 140px 40px 0 40px;
+}
+
+.Box {
+    display: none;
+}
+
+
+@media (max-width: 425px) {
+    .Container {
+        padding: 80px 20px 0 20px;
+    }
+    .Home img {
+        top: 120px;
+        width: 100px;
+        height: auto;
+        left: 40%;
+    }
+    .HomeTitle {
+        margin-top: 140px;
+        font-size: 24px;
+    }
+
+    .Box {
+        display: block;
+    }
 }

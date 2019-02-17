@@ -7,6 +7,7 @@
 .SectionTitle {
     font-size: 28px;
     padding-top: 40px;
+    margin: 0;
 }
 
 .List {
@@ -20,4 +21,36 @@
 
 .Flex {
     display: flex;
+}
+@media (max-width: 425px) {
+
+
+    .SectionTitle {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .List {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .List ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .List li {
+        margin: 5px 0;
+        flex-basis: 50%;
+    }
+
+
+    .Flex {
+        display: block;
+    }
+
 }

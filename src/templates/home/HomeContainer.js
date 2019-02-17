@@ -5,6 +5,7 @@ import Top from './Top/HomeMain';
 import ProductContainer from './Products/ProductContainer';
 import SkillContainer from "./Skills/SkillsContainer";
 import Challenge from "./Challenges/Challenge";
+import Sns from "./Sns/Sns";
 
 class HomeContainer extends Component {
 
@@ -15,6 +16,7 @@ class HomeContainer extends Component {
 								<ProductContainer />
 								<SkillContainer />
 								<Challenge />
+								<Sns />
 						</div>
 				);
 		}
