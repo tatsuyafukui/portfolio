@@ -1,0 +1,12 @@
+.Header {
+    width: 100%;
+    padding-top: 8px;
+    height: 65px;
+    line-height: 65px;
+}
+
+@media (max-width: 425px) {
+    .Header {
+        display: none;
+    }
+}

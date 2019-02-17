@@ -1,0 +1,29 @@
+.Menu {
+    color: rgba(255,255,255,0.8);
+}
+
+
+
+.Menu a {
+    color: rgba(255,255,255,0.8);
+    list-style: none;
+}
+
+.Menu ul {
+    margin: 0;
+    margin-top: 40px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.Menu li {
+    display: inline-block;
+
+}
+
+.Menu li:hover {
+    display: inline-block;
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+}
