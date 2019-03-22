@@ -4,8 +4,7 @@ import lunchImage from '../../../assetts/images/lunch.png';
 import letterImage from '../../../assetts/images/letter.png';
 import bomImage from '../../../assetts/images/bom.png';
 import stampImage from '../../../assetts/images/stamp.png';
-
-import SectionTitle from '../../../atoms/Title/SectionTitle';
+import chatImage from '../../../assetts/images/chat.png';
 
 import classes from './ProductContainer.css';
 
@@ -44,6 +43,14 @@ class ProductContainer extends Component {
 								use: 'Adobe illustrator',
 								url: 'https://store.line.me/stickershop/product/6212496',
 								image: stampImage
+						},
+						{
+								id: '4',
+								title: 'Chat App',
+								content: 'SPAでチャットアプリを作りました',
+								use: 'React Rails-API',
+								url: 'https://chat-react-rails-app.firebaseapp.com/',
+								image: chatImage
 						}
 				]
 		};
